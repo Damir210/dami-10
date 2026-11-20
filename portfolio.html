@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио практики | Damir</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>DAMI<span>PORTFOLIO</span></h1>
+            <nav>
+                <a href="#about">Обо мне</a>
+                <a href="#works">Работы</a>
+                <a href="#defense">Защита</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero" id="about">
+            <div>
+                <p class="subtitle">ПОРТФОЛИО ПРОИЗВОДСТВЕННОЙ ПРАКТИКИ</p>
+                <h2>Привет, я <span>Damir</span></h2>
+                <p>Студент Инновационного технического колледжа.
+                   Изучаю веб-разработку и создание современных сайтов.</p>
+            </div>
+            <div class="hero-card">
+                <div class="avatar">D</div>
+                <h3>Damir</h3>
+                <p>Web Developer</p>
+            </div>
+        </section>
+        <section class="info">
+            <h2>Мои технологии</h2>
+            <div class="technologies">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>JSON</span>
+                <span>LocalStorage</span>
+                <span>Git</span>
+                <span>Vue.js</span>
+            </div>
+        </section>
+        <section class="works" id="works">
+            <h2>Практические работы</h2>
+            <p>Список выполненных работ за период практики.</p>
+            <div class="progress-info">
+                <span>Общий прогресс</span>
+                <span id="progress-text">0 / 10</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <div class="filters">
+                <button class="filter active" data-filter="all">Все</button>
+                <button class="filter" data-filter="html">HTML / CSS</button>
+                <button class="filter" data-filter="js">JavaScript</button>
+                <button class="filter" data-filter="tools">Инструменты</button>
+            </div>
+            <div class="work-list" id="work-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 DAMI PORTFOLIO | Производственная практика</p>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
